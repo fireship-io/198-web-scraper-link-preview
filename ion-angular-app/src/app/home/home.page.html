@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+    <h1>Form</h1>
+    <!-- Try this: <pre>get some https://fireship.io and https://fireship.io/courses/javascript/</pre> -->
+  <form (submit)="handleSubmit($event)">
+    <ion-label position="floating">Text</ion-label>
+    <ion-textarea (keyup)="handleChange($event)"></ion-textarea>
+
+    <ion-button type="submit">Submit</ion-button>
+  </form>
+
+  {{ text }} 
+  <hr>
+  <h3>{{ loading ? 'Loading...  🤔🤔🤔' : '' }}</h3>
+
+  <a class="preview" *ngFor="let linkData of links" [href]="linkData.url">
+    <img [src]="linkData.image" />
+    <div>
+      <h4>{{linkData.title}}</h4>
+      <p>{{linkData.description}}</p>
+    </div>
+  </a>
+
+
+</ion-content>
