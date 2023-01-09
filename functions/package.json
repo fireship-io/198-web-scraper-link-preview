@@ -14,8 +14,8 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
-    "firebase-admin": "^8.0.0",
-    "firebase-functions": "^3.1.0",
+    "firebase-admin": "^11.4.1",
+    "firebase-functions": "^3.24.1",
     "get-urls": "^9.1.0",
     "node-fetch": "^2.6.0",
     "puppeteer": "^1.18.1"
